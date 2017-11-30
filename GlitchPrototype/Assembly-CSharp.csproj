@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{82C5A442-85E4-3683-1F51-97D512402C99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\BetterJump.cs" />
+     <Compile Include="Assets\cameraBoundaries.cs" />
+     <Compile Include="Assets\CamShakeSimple.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\ConstantShake.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\Example\SGFEBullet.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\Example\SGFEEnemy.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\Example\SGFEPlayer.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\Example\SGFEStep.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\Hitstop.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\Kickback.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\Screenshake.cs" />
+     <Compile Include="Assets\Clavian\SuperGameFeelEffects\SuperGameFeelEffectsExtentions.cs" />
+     <Compile Include="Assets\destroyafter.cs" />
+     <Compile Include="Assets\DestroyMe.cs" />
+     <Compile Include="Assets\DieOnTouch.cs" />
+     <Compile Include="Assets\direction.cs" />
+     <Compile Include="Assets\EnemyScript.cs" />
+     <Compile Include="Assets\fallingObject.cs" />
+     <Compile Include="Assets\GameControl.cs" />
+     <Compile Include="Assets\GameObjectUtil.cs" />
+     <Compile Include="Assets\gem.cs" />
+     <Compile Include="Assets\gravitynormal.cs" />
+     <Compile Include="Assets\InstantVelocity.cs" />
+     <Compile Include="Assets\landMine.cs" />
+     <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\ObjectPool.cs" />
+     <Compile Include="Assets\PixelPerfectCamera.cs" />
+     <Compile Include="Assets\playerController.cs" />
+     <Compile Include="Assets\projectileController.cs" />
+     <Compile Include="Assets\RecycleGameObject.cs" />
+     <Compile Include="Assets\RepeatingBackground.cs" />
+     <Compile Include="Assets\Reversegravity.cs" />
+     <Compile Include="Assets\Scroll.cs" />
+     <Compile Include="Assets\ScrollingObject.cs" />
+     <Compile Include="Assets\Spawner.cs" />
+     <Compile Include="Assets\startGame.cs" />
+     <Compile Include="Assets\Vortex Game Studios\FilterBehavior\FilterBehaviour.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 2\OLDTVScreen.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 2\OLDTVTube.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 2\Tutorials\CameraReflex.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\OLDTVFilter3.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\ChromaticAberrationProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\CompositeProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\NoiseProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\OLDTVPreset.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\ScanlineProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\StaticProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\TelevisionProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Runtime\TubeProfile.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Tutorials\CameraReflexNew.cs" />
+     <Compile Include="Assets\Vortex Game Studios\OLD TV Filter 3\Tutorials\Rotate.cs" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\NoiseShader.shader" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\CompositeShader.shader" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 2\Shader\OLDTVFilter_Screen.shader" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\StaticShader.shader" />
+     <None Include="Assets\Clavian\SuperGameFeelEffects\Example\press_start_2p\LICENSE.txt" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\TelevisionShader.shader" />
+     <None Include="Assets\Vortex Game Studios\Common\Shaders\RGB_YUV.cginc" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 2\Shader\OLDTVFilter_Tube.shader" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Material\Resources\Shaders\OLDTVMaterial.shader" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\ScanlineShader.shader" />
+     <None Include="Assets\Clavian\SuperGameFeelEffects\Example\press_start_2p\FONTLOG.txt" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\TubeShader.shader" />
+     <None Include="Assets\Vortex Game Studios\OLD TV Filter 3\Resources\Shaders\BleedingShader.shader" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>/Users/greg/Unity/GlitchPrototype/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/greg/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Users/greg/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

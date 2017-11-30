@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ca736e96abc2f4ea8d534847879f21, type: 3}
+  m_Name: RGB
+  m_EditorClassIdentifier: 
+  _noiseFilter:
+    _foldout: 0
+    _material: {fileID: 0}
+    _enabled: 0
+    pattern: {fileID: 2800000, guid: df0ffcc7ed4d822408d84a34b9d048e0, type: 3}
+    magnetude: 0.15
+    scale: {x: 1, y: 1}
+  _compositeFilter:
+    _foldout: 1
+    _material: {fileID: 0}
+    _enabled: 1
+    _materialBleeding: {fileID: 0}
+    lineCount: 224
+    distortion: 0
+    artifact: 0
+    fringing: 0
+    bleeding: 0
+  _staticFilter:
+    _foldout: 0
+    _material: {fileID: 0}
+    _enabled: 0
+    staticPattern: {fileID: 2800000, guid: 43a04c1efe2bb194e936e6b500cc884d, type: 3}
+    staticMagnitude: 0.1
+    staticScale: 1
+    staticOffset: 0
+    dirtPattern: {fileID: 2800000, guid: df0ffcc7ed4d822408d84a34b9d048e0, type: 3}
+    dirtMagnitude: 0.35
+  _televisionFilter:
+    _foldout: 0
+    _material: {fileID: 0}
+    _enabled: 1
+    lineCount: 224
+    sync: {x: 0, y: 0}
+    brightness: 0
+    contrast: 0
+    saturation: 0.5
+    sharpness: 0.3
+  _chromaticAberrationFilter:
+    _foldout: 0
+    _material: {fileID: 0}
+    _enabled: 1
+    pattern: {fileID: 2800000, guid: 739cbb7d52294184593ce6b7676a510b, type: 3}
+    magnetude: 0.1
+  _scanlineFilter:
+    _foldout: 0
+    _material: {fileID: 0}
+    _enabled: 1
+    pattern: {fileID: 2800000, guid: a1dbf24ae6b15204d865e07f735d09aa, type: 3}
+    lineCount: 224
+    magnetude: 0.5
+  _tubeFilter:
+    _foldout: 0
+    _material: {fileID: 0}
+    _enabled: 1
+    maskPattern: {fileID: 2800000, guid: 740e2a6166d12b5479fbc50eb9a1fc83, type: 3}
+    reflexPattern: {fileID: 2800000, guid: 1fc9ba9fb0c2dbf42b42d010983ac96d, type: 3}
+    distortionMagnitude: 0.15
+    reflexMagnitude: 0.5

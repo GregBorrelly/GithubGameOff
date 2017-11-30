@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2c2b7b5a87a87944b8eec1fbb85943bb
+timeCreated: 1441294194
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - shader: {fileID: 4800000, guid: 46bd0f7afa367534eb405ad0eae5c9df, type: 3}
+  - tvMaterialTube: {fileID: 2100000, guid: 10a0c5709e43b824ea2373233671c58d, type: 2}
+  - scanlinePattern: {fileID: 2800000, guid: a1dbf24ae6b15204d865e07f735d09aa, type: 3}
+  - mask: {fileID: 2800000, guid: 740e2a6166d12b5479fbc50eb9a1fc83, type: 3}
+  - reflex: {fileID: 2800000, guid: 1fc9ba9fb0c2dbf42b42d010983ac96d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

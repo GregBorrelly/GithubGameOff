@@ -1,0 +1,31 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playerController.cs">
+    <Files>
+      <File FileName="Assets/GameControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/cameraBoundaries.cs" Line="1" Column="1" />
+      <File FileName="Assets/playerController.cs" Line="153" Column="36" />
+      <File FileName="Assets/EnemyScript.cs" Line="17" Column="35" />
+      <File FileName="Assets/projectileController.cs" Line="15" Column="3" />
+      <File FileName="Assets/ScrollingObject.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scroll.cs" Line="1" Column="1" />
+      <File FileName="Assets/fallingObject.cs" Line="1" Column="1" />
+      <File FileName="Assets/DestroyMe.cs" Line="1" Column="1" />
+      <File FileName="Assets/DieOnTouch.cs" Line="1" Column="1" />
+      <File FileName="Assets/landMine.cs" Line="36" Column="17" />
+      <File FileName="Assets/ObjectPool.cs" Line="1" Column="1" />
+      <File FileName="Assets/InstantVelocity.cs" Line="1" Column="1" />
+      <File FileName="Assets/Spawner.cs" Line="16" Column="2" />
+      <File FileName="Assets/destroyafter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Clavian/SuperGameFeelEffects/Example/SGFEStep.cs" Line="11" Column="1" />
+      <File FileName="Assets/Clavian/SuperGameFeelEffects/Example/SGFEPlayer.cs" Line="66" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/greg/Unity/GlitchPrototype/Assets/destroyafter.cs" line="21" column="1" />
+      <Breakpoint file="/Users/greg/Unity/GlitchPrototype/Assets/playerController.cs" line="60" column="24" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

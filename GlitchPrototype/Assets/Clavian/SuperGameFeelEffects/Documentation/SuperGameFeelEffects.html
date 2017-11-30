@@ -1,0 +1,364 @@
+<pre>
+<head>
+    <title>Super Game Feel Effects Documentation</title>
+    <link rel="shortcut icon" type="image/png" href="/SGFEDocImages/favicon.png"/>
+</head>
+<style>
+* {
+    box-sizing:border-box;
+}
+body {
+    background-color: #a2baff; 
+    background-image: url("SGFEDocImages/background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #000;
+    padding:0 15px;
+}
+a {
+    color: #000;
+    font-weight: bold;
+}
+pre {
+    font-family: "courier new", courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+code {
+    font-family: "courier new", courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+.column{
+    background-color: #ff7930;
+    width: 100%;
+    max-width:1200px;
+    margin:30px auto;
+    padding: 15px;
+}
+.banner {
+    text-align: center;
+    max-width: 100%;
+    color: #000;
+}
+.banner img {
+    max-width: 100%;
+}
+.tableofcontents {
+    background-color: #FFF;
+    max-width: 50%;
+    padding: 15px;
+    margin: 15px;
+}
+.textarea {
+    margin: 50px 50px;
+}
+.rightbox {
+    color: #000;
+    text-align: center;
+    font-style: italic;
+    float: right;
+    background-color: #FFF;
+    padding: 15px;
+    margin: 0px 0px 0px 15px;
+    max-width: 33%;
+}
+.rightbox img {
+    width: 100%;
+}
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: underline;
+}
+h2 {
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;
+}
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}
+hr {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+/* Mobiley Styley */
+
+@media only screen and (max-width: 1000px) { 
+
+    .tableofcontents {
+        max-width:100%;
+    }
+
+}
+
+@media only screen and (max-width: 640px) { 
+
+    .textarea {
+        margin:15px;
+        word-break:break-word;
+    }
+    .rightbox {
+        float:none;
+        max-width:100%;
+        margin:0 0 15px;
+        padding:5px;
+    }
+    ul{
+        padding-left:0;
+        list-style-type:none;
+    }
+    ol {
+        padding-left:15px;
+    }
+    ul ul, ol ul {
+        padding-left:20px;
+        list-style-type:disc;
+    }
+
+}
+</style></pre>
+
+<p><br>
+<br>
+<br>
+<article class="column"><article class="banner">
+<img src="SGFEDocImages/banner.png"/><br>
+<br>
+Super Game Feel Effects Documentation - v1.0
+</article><article class="tableofcontents"><article class="textarea"></p>
+
+<h1>Table of Contents</h1>
+
+<p><a href="#Features">Features</a></p>
+
+<ol>
+<li><a href="#Adding Super Game Feel Effects to Unity">Adding Super Game Feel Effects to Unity</a>
+<ul><li><a href="#Importing Super Game Feel Effects into Unity">Importing Super Game Feel Effects into Unity</a></li>
+<li><a href="#Adding Super Game Feel Effects to a Scene">Adding Super Game Feel Effects to a Scene</a></li></ul></li>
+<li><a href="#Getting Started">Getting Started</a>
+<ul><li><a href="#Tips &amp; Tricks">Tips &amp; Tricks</a></li></ul></li>
+<li><a href="#Functions &amp; Variables">Functions &amp; Variables</a>
+<ul><li><a href="#Screenshake">Screenshake</a></li>
+<li><a href="#Kickback">Kickback</a></li>
+<li><a href="#Hitstop">Hitstop</a></li></ul></li>
+</ol>
+
+<p><a href="#Notes">Notes</a>
+<a href="#ChangeLog">ChangeLog</a>
+<a href="#Credits">Credits</a>
+</article></article><article class="textarea"></p>
+
+<hr />
+
+<p><a name="Features"></a></p>
+
+<h1>Features</h1>
+
+<ul>
+<li>Super Game Feel Effects is a Unity tool that allows you to add game feel effects like Screenshake, Kickback, and Hitstop to a game without conflict.</li>
+<li>All effects work with other scripts. Screenshake and Kickback do not interfere with any other camera scripts.</li>
+<li>Extentions allow all functions to be called through a camera.</li>
+</ul>
+
+<hr />
+
+<p><a name="Adding Super Game Feel Effects to Unity"></a></p>
+
+<h1>1. Adding Super Game Feel Effects to Unity</h1>
+
+<p><a name="Importing Super Game Feel Effects into Unity"></a></p>
+
+<h2>a. Importing Super Game Feel Effects into Unity</h2>
+
+<p>To import Super Game Feel Effects into your project, either drag in the .unitypackage file, or get it from the asset store window.</p>
+
+<h3>Imported folders, what they do, and if you need to import them or not, alphabetically:</h3>
+
+<ul>
+<li><strong>"Documentation"</strong> contains these docs! You don't need to import them, but you probably should!</li>
+<li><strong>"Example"</strong> contains the demo scene. Not needed if you don't want the demo.</li>
+</ul>
+
+<p>"ConstantShake.cs" is a bonus script for making an object shake constantly.
+"SuperGameFeelEffectsExtentions.cs" allows the rest of the scripts to be called as a camera extention.
+The rest of the scripts are the actual Screenshake, Kickback, and Hitstop effects.</p>
+
+<p><a name="Adding Super Game Feel Effects to a Scene"></a></p>
+
+<h2>b. Adding Super Game Feel Effects to a Scene</h2>
+
+<p>To add any Super Game Feel Effects script to a camera, select "Add Component" in the inspector of an existing camera. They can be found under "Utility > Super Game Feel Effects".</p>
+
+<hr />
+
+<p><a name="Getting Started"></a></p>
+
+<h1>2. Getting Started</h1>
+
+<p><a name="Tips &amp; Tricks"></a></p>
+
+<h2>a. Tips &amp; Tricks</h2>
+
+<ul>
+<li><p>Screenshake, Kickback, and Hitstop can all be called through the camera they're attached to! So instead of calling "Camera.main.GetComponent<Screenshake>().Shake()", you can just call "Camera.main.Shake()".</p></li>
+<li><p>If you want to 'store' multiple types of screenshakes on the same camera, you can call specific scripts directly.</p></li>
+</ul>
+
+<p><article class="rightbox">
+<a href="SGFEDocImages/inspector1.png"><img src="SGFEDocImages/inspector1.png"/></a><br><br>
+The inspector window.
+</article></p>
+
+<hr />
+
+<p><a name="Functions &amp; Variables"></a></p>
+
+<h1>3. Functions &amp; Variables</h1>
+
+<p><a name="Screenshake"></a></p>
+
+<h2>a. Screenshake</h2>
+
+<ul>
+<li><h3>void Screenshake.Shake()</h3></li>
+<li><h3>void Camera.Shake()</h3>
+
+<p>Tells the camera to shake, with the current preferences.</p></li>
+<li><h3>void Screenshake.Shake(float multiplier)</h3></li>
+<li><h3>void Camera.Shake(float multiplier)</h3>
+
+<p>Tells the camera to shake, with the current preferences, with a multiplier on the intensity.</p></li>
+<li><h3>AnimationCurve Screenshake.curve</h3>
+
+<p>The intensity of the screenshake over time.</p></li>
+<li><h3>Vector3 Screenshake.strength</h3>
+
+<p>The strength of the screenshake effect based on the curve, split into axises.</p></li>
+<li><h3>bool Screenshake.useLocalSpace</h3>
+
+<p>Whether or not Screenshake.strength is relative to the direction the camera is facing, or world rotation. This will most likely want to be set to true.</p></li>
+<li><h3>float Screenshake.intensity</h3>
+
+<p>A multipier of strength.</p></li>
+<li><h3>float Screenshake.time</h3>
+
+<p>How long the shake effect lasts.</p></li>
+<li><h3>[RANGE 0 - 7] int Screenshake.roundDecimals</h3>
+
+<p>Whether or not the screenshake effect will be rounded to a specific decimal place or not. Not rounded if left at 7.</p></li>
+</ul>
+
+<p><a name="Kickback"></a></p>
+
+<h2>b. Kickback</h2>
+
+<ul>
+<li><h3>void Kickback.Kick(Vector3 normalizedDirection)</h3></li>
+<li><h3>void Camera.Kick(Vector3 normalizedDirection)</h3>
+
+<p>Tells the camera to kickback with a specified vector, multiplied by strength.</p></li>
+<li><h3>void Kickback.Kick(Vector3 normalizedDirection, float multiplier)</h3></li>
+<li><h3>void Camera.Kick(Vector3 normalizedDirection, float multiplier)</h3>
+
+<p>Tells the camera to shake, with the current preferences, with a multiplier on the intensity.</p></li>
+<li><h3>AnimationCurve Kickback.curve</h3>
+
+<p>The intensity of the kickback over time.</p></li>
+<li><h3>bool Kickback.useLocalSpace</h3>
+
+<p>Whether or not the kickback's normalizedDirection is relative to the direction the camera is facing, or not.</p></li>
+<li><h3>float Kickback.intensity</h3>
+
+<p>How much the camera will kick back.</p></li>
+<li><h3>float Kickback.time</h3>
+
+<p>How long the kickback lasts.</p></li>
+<li><h3>[RANGE 0 - 7] int Kickback.roundDecimals</h3>
+
+<p>Whether or not the kickback will be rounded to a specific decimal place or not. Not rounded if left at 7.</p></li>
+</ul>
+
+<p><a name="Hitstop"></a></p>
+
+<h2>c. Hitstop</h2>
+
+<ul>
+<li><h3>void Hitstop.Stop()</h3></li>
+<li><h3>void Camera.Stop()</h3>
+
+<p>Sets the game's timescale to follow the curve for the specified amount of time.</p></li>
+<li><h3>void Hitstop.Stop(float multiplier)</h3></li>
+<li><h3>void Camera.Stop(float multiplier)</h3>
+
+<p>Sets the game's timescale to follow the curve for the specified amount of time, with time multipied by the multiplier.</p></li>
+<li><h3>float Hitstop.time</h3>
+
+<p>The amount of time the effect will last for.</p></li>
+<li><h3>AnimationCurve Hitstop.curve</h3>
+
+<p>The value the effect will be, over time. By default this is a horizontal line at a 0 value.</p></li>
+</ul>
+
+<hr />
+
+<p><a name="Notes"></a></p>
+
+<h1>Notes</h1>
+
+<ul>
+<li>If a function is called through a camera, and the camera does not yet have the component, it will automatically be added to the camera and called. The default strength/intensity for each component is set to 1, so the multiplier can be useful when using this method.</li>
+<li>"ConstantShake.cs" is a bonus script that can be attached to an object.</li>
+</ul>
+
+<h2>Known Bugs</h2>
+
+<ul>
+<li>None at the moment!</li>
+</ul>
+
+<h2>Planned Features / To Do List:</h2>
+
+<ul>
+<li>Nothing at the moment!</li>
+</ul>
+
+<hr />
+
+<p><a name="ChangeLog"></a></p>
+
+<h1>ChangeLog</h1>
+
+<h3>v1.0</h3>
+
+<ul>
+<li>Initial release!</li>
+</ul>
+
+<hr />
+
+<p><a name="Credits"></a></p>
+
+<h1>Credits</h1>
+
+<p>Coding and design by Kai Clavier (<a href="http://twitter.com/KaiClavier">@KaiClavier</a>) <br />
+Extra CSS help by Tak (<a href="http://twitter.com/takorii">@takorii</a>) <br />
+<br>
+<br>
+</article>
+</article></p>
+
